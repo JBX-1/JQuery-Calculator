@@ -1,0 +1,17 @@
+body {
+    background-color: tomato;
+    color: tomato;
+}
+/* jumbo tron */
+.jumbotron {
+    background-color: black;
+}
+.jumbo-header {
+    color: tomato;
+}
+.card-header {
+    background-color: gold;
+}
+.card-body  {
+    background-color: black;
+}
