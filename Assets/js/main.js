@@ -26,10 +26,10 @@ $(document).ready(function () {
             if(operatorChosen){
                 numberTwo += $(this).val();
                 console.log(numberTwo)
-                $('.numberTwo').text(numberTwo);
+                $('#numberTwo').text(numberTwo);
             }else {
                 numberOne += $(this).val();
-                $('.numberOne').text(numberOne);
+                $('#numberOne').text(numberOne);
             }
 
         })
