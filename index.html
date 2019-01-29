@@ -12,7 +12,9 @@
         crossorigin="anonymous">
     <!-- Link Google Fonts, Navbar -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="Assets/css/style.css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 
 
     </style>
@@ -21,54 +23,61 @@
 <body>
 
     <div class="jumbotron">
-        <h1 class="jumbo-header">Calculator</h1>
+        <h1>Calculator</h1>
     </div>
 
     <!-- CARD PANEL -->
     <div class="container">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-4">
                 <div class="card">
                     <h3 class="card-header">Calculator</h3>
                     <div class="card-body">
-                        <button type="button" class="btn btn-outline-primary" value="1">1</button>
-                        <button type="button" class="btn btn-outline-secondary">2</button>
-                        <button type="button" class="btn btn-outline-success">3</button>
-                        <button type="button" class="btn btn-outline-danger">+</button>
+                        <button type="button" class="btn btn-outline-primary number" value="1">1</button>
+                        <button type="button" class="btn btn-outline-secondary number" value="2">2</button>
+                        <button type="button" class="btn btn-outline-success number" value="3">3</button>
+                        <button type="button" class="btn btn-outline-danger operator" value="plus">+</button>
                         <br><br>
-                        <button type="button" class="btn btn-outline-warning">4</button>
-                        <button type="button" class="btn btn-outline-info">5</button>
-                        <button type="button" class="btn btn-outline-warning">6</button>
-                        <button type="button" class="btn btn-outline-dark">&minus;</button>
+                        <button type="button" class="btn btn-outline-warning number" value="4">4</button>
+                        <button type="button" class="btn btn-outline-info number" value="5">5</button>
+                        <button type="button" class="btn btn-outline-warning number" value="6">6</button>
+                        <button type="button" class="btn btn-outline-dark operator" value="minus">&minus;</button>
                         <br><br>
-                        <button type="button" class="btn btn-outline-primary">7</button>
-                        <button type="button" class="btn btn-outline-secondary">8</button>
-                        <button type="button" class="btn btn-outline-success">9</button>
-                        <button type="button" class="btn btn-outline-danger">&times;</button>
+                        <button type="button" class="btn btn-outline-primary number" value="7">7</button>
+                        <button type="button" class="btn btn-outline-secondary number" value="8">8</button>
+                        <button type="button" class="btn btn-outline-success number" value="9">9</button>
+                        <button type="button" class="btn btn-outline-danger operator" value="times">&times;</button>
                         <br><br>
-                        <button type="button" class="btn btn-outline-warning">0</button>
-                        <button type="button" class="btn btn-outline-info">&divide;</button>
-                        <button type="button" class="btn btn-outline-warning">^</button>
-                        <button type="button" class="btn btn-outline-dark">=</button>
+                        <button type="button" class="btn btn-outline-warning number" value="0">0</button>
+                        <button type="button" class="btn btn-outline-info operator" value="divide">&divide;</button>
+                        <button type="button" class="btn btn-outline-warning operator" value="power">^</button>
+                        <button type="button" class="btn btn-outline-dark equal" value="equals">=</button>
                         <br><br>
-                        <button type="button" class="btn btn-outline-info">clear</button>
+                        <button type="button" class="btn btn-outline-info clear" value="clear">clear</button>
+
                     </div>
-                    <div class="col-lg-6 resultContainer">
-                        <div class="card">
-                            <h3 class="card-header"></h3>
-                            <div class="card-body">
-                                <h1 class="numberOne"></h1>
-                                <h1 class="operator"></h1>
-                                <h1 class="numberTwo"></h1>
-                            </div>
+                </div>
+            </div>
+            <!-- RESULT -->
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-header">
+                        Result
+                        <div class="card-body">
+                            <h2 id="numberOne"></h2>
+                            <h2 id="operator"></h2>
+                            <h2 id="numberTwo"></h2>
+                            <hr>
+                            <h2 id="result"></h2>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
 
     </div>
-
+<script src="Assets/js/main.js"></script>
 </body>
 
 </html>
